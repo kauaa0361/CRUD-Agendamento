@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pagamento</title>
+</head>
+<body>
+  
+  <form id="payment-form">
+    <h1>Pagamento</h1>
+    <h2>Selecione o Método de Pagamento</h2>
+    <label>
+      <input type="radio" name="payment_method" value="pix" checked>
+      PIX
+    </label><br>
+    <label>
+      <input type="radio" name="payment_method" value="cartao">
+      Cartão de Crédito
+    </label><br>
+    <label>
+      <input type="radio" name="payment_method" value="boleto">
+      Boleto Bancário
+    </label><br><br>
+    <a rel="stylesheet" href="/confirmacao.html">
+      <button type="button" onclick="confirmPayment()">Prosseguir para Pagamento</button>
+    </a>
+  </form>
+  <script>
+    function confirmPayment() {
+    }
+  </script>
+</body>
+</html>
